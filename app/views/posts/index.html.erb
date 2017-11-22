@@ -1,9 +1,16 @@
+
 <h1>Posts</h1>
   <% @post.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.body %></td>
-    </tr>
+    <h3><%= post.title %></h3>
+    <br>
+    <p><%= post.body %></p>
+    <br>
+    <button type="button" name="button">  <%= link_to 'Show', post %></button><br>
+
+
+
   <% end %>
+
+
 
   <%= link_to 'New Post', new_post_path %>
