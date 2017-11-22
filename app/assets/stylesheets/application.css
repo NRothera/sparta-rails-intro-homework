@@ -26,3 +26,22 @@ h3 {
   display: inline-block;
   color: blue;
 }
+
+#content {
+  margin-top: 40px;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height:20px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+}
