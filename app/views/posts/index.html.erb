@@ -1,0 +1,16 @@
+<nav>
+    <%= link_to 'New Post', new_post_path %>
+</nav>
+<h1>Posts</h1>
+
+<div id="content">
+
+  <% @post.each do |post| %>
+    <h3><%= post.title %></h3>
+    <br>
+    <p><%= post.body %></p>
+    <br>
+    <button type="button" name="button">  <%= link_to 'Show', post %></button><br>
+  <% end %>
+
+  </div>
